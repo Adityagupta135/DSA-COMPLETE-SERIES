@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int factorial(int n)
+{
+    
+    int fact=1;
+    
+    for(int i=1; i<=n ; i++)
+    {
+        fact = fact*i;
+    }
+    return fact;
+    
+}
+
+int nCr(int n, int r)
+{
+    int numer = (factorial(n));
+    
+    int deno =( factorial(n-r)*factorial(r));
+    
+    
+    int ans = numer/deno;
+    
+    return ans;
+    
+}
+
+int main()
+{
+    int n,r;
+    
+    cout<<"enter the value of n and r" <<endl;
+    cin>>n >> r;
+    
+    cout<<"the value of nCr is"<< nCr(n,r);
+}
+
