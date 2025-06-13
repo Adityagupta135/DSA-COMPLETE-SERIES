@@ -1,0 +1,39 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+
+int main() {
+int amt,noh,nof,notw,noten, noone;
+
+
+cout<<"enter the amount";
+cin>>amt;
+
+noh= amt/100;
+cout<<"the no. of notes of hundred"<<noh<<endl;
+
+
+amt = amt %100;
+
+
+nof = amt/50;
+cout<<"the no. of notes of 50 "<<nof<<endl;
+
+amt = amt%50;
+
+notw = amt/20;
+cout<<"the no. of notes of 20 "<<notw<<endl;
+
+amt = amt%20;
+
+noten = amt/10;
+cout<<"the no. of notes of 10 "<<noten<<endl;
+
+amt = amt%10;
+
+noone = amt/1;
+cout<<"the no. of notes of 1 "<<noone<<endl;
+
+    return 0;
+}
